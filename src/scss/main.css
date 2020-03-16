@@ -1,0 +1,249 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  width: 100%;
+}
+
+body {
+  background: black;
+}
+
+.App {
+  width: 768px;
+  padding: 20px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .App {
+    width: 100%;
+  }
+}
+
+.App .about {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.App .purpose {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.App .genre-name {
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.App .select-genre {
+  display: block;
+  padding: 8px 20px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.App button.get-movie {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 8px 20px;
+  border: 0;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(yellow), to(green));
+  background: linear-gradient(yellow, green);
+  text-shadow: 1px 2px 3px #333;
+  margin-bottom: 20px;
+  opacity: 0.75;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.App button.get-movie:hover {
+  opacity: 1;
+}
+
+.Preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/preloader-bg.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  -webkit-animation: ShowPreloader 10s linear alternate infinite;
+          animation: ShowPreloader 10s linear alternate infinite;
+  z-index: 1;
+}
+
+@-webkit-keyframes ShowPreloader {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes ShowPreloader {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.Preloader .spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+}
+
+.Preloader .spinner div {
+  width: 128px;
+  height: 128px;
+}
+
+.movie {
+  margin: auto;
+}
+
+.movie .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie .image img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.movie .description {
+  font-size: 14px;
+  color: #eee;
+  padding-left: 10px;
+  border-left: 10px solid rgba(238, 238, 238, 0.6);
+  margin-bottom: 10px;
+}
+
+.movie .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.movie .rating img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.movie .year {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.movie .links {
+  margin-bottom: 10px;
+}
+
+.movie .links a img {
+  width: 32px;
+  margin-right: 16px;
+}
+
+.spinner {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.spinner div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  margin: 6px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: spinner 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: spinner 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+  -webkit-box-shadow: 1px 2px 5px 1px black;
+          box-shadow: 1px 2px 5px 1px black;
+}
+
+.spinner div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.spinner div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.spinner div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

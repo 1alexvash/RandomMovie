@@ -1,0 +1,62 @@
+@import "reset";
+@import "responsive";
+
+body {
+  background: black;
+}
+
+.App {
+  width: 768px;
+  padding: 20px;
+  margin: auto;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+  @include responsive(800px) {
+    width: 100%;
+  }
+  .about {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .purpose {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .genre-name {
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+  .select-genre {
+    display: block;
+    padding: 8px 20px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  button.get-movie {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 20px;
+    border: 0;
+    color: white;
+    background: linear-gradient(yellow, green);
+    text-shadow: 1px 2px 3px #333;
+    margin-bottom: 20px;
+    opacity: 0.75;
+    transition: 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@import "components/Preloader";
+@import "components/Movie";
+@import "components/Spinner";

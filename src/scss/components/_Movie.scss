@@ -1,0 +1,44 @@
+.movie {
+  margin: auto;
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .image {
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .description {
+    font-size: 14px;
+    color: #eee;
+    padding-left: 10px;
+    border-left: 10px solid rgba(#eee, 0.6);
+    margin-bottom: 10px;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+  }
+  .year {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  .links {
+    margin-bottom: 10px;
+    a {
+      img {
+        width: 32px;
+        margin-right: 16px;
+      }
+    }
+  }
+}
