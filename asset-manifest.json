@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/RandomMovie/static/css/main.d390dfcf.chunk.css",
+    "main.js": "/RandomMovie/static/js/main.0d8e0a93.chunk.js",
+    "main.js.map": "/RandomMovie/static/js/main.0d8e0a93.chunk.js.map",
+    "runtime~main.js": "/RandomMovie/static/js/runtime~main.c79c5349.js",
+    "runtime~main.js.map": "/RandomMovie/static/js/runtime~main.c79c5349.js.map",
+    "static/js/2.eafe8ee1.chunk.js": "/RandomMovie/static/js/2.eafe8ee1.chunk.js",
+    "static/js/2.eafe8ee1.chunk.js.map": "/RandomMovie/static/js/2.eafe8ee1.chunk.js.map",
+    "index.html": "/RandomMovie/index.html",
+    "precache-manifest.d44c90fb6f3cc413f3dd8ed29d65f1c2.js": "/RandomMovie/precache-manifest.d44c90fb6f3cc413f3dd8ed29d65f1c2.js",
+    "service-worker.js": "/RandomMovie/service-worker.js",
+    "static/css/main.d390dfcf.chunk.css.map": "/RandomMovie/static/css/main.d390dfcf.chunk.css.map",
+    "static/media/google.png": "/RandomMovie/static/media/google.b5172027.png",
+    "static/media/main.css": "/RandomMovie/static/media/preloader-bg.6abe06c2.jpg",
+    "static/media/star.jpg": "/RandomMovie/static/media/star.d2b2e36e.jpg",
+    "static/media/torrent.png": "/RandomMovie/static/media/torrent.87f579ec.png",
+    "static/media/youtube.png": "/RandomMovie/static/media/youtube.5378d37a.png"
+  }
+}
